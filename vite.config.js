@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: "https://task-manager-api-brl4.onrender.com",
+        target: "https://task-manager-api-brl4.onrender.com/api",
       }
     }
   },
