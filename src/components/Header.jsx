@@ -34,7 +34,7 @@ function Header() {
 
   return (
 
-    <header className="flex items-center justify-between h-20 px-2">
+    <header className="flex items-center justify-between h-16 px-2">
       <div className='text-2xl'>{username}</div>
       <nav className='flex items-center justify-center gap-5'>
 
