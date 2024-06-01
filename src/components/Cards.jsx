@@ -10,7 +10,7 @@ function Cards() {
     const [tasks, setTasks] = useState([])
 
     const GetTask = async () => {
-        const response = await axios.get('api/task')
+        const response = await axios.get('https://task-manager-api-brl4.onrender.com/api/task')
 
         if (response.data.success) {
             setTasks(response.data.allTask)
@@ -21,7 +21,7 @@ function Cards() {
 
     const DeleteTask = async (id) => {
         setLoding(true)
-        const response = await axios.get(`api/task/d/${id}`)
+        const response = await axios.get(`https://task-manager-api-brl4.onrender.com/api/task/d/${id}`)
 
         if (!response.data.success) {
             toast.error(response.data.message)

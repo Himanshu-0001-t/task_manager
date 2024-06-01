@@ -9,7 +9,7 @@ function Card({ task, DeleteTask }) {
     const [taskComplete, setTaskComplete] = useState(false)
 
     const ToogleChange = async (id) => {
-        const response = await axios.get(`api/task/t/${id}`)
+        const response = await axios.get(`https://task-manager-api-brl4.onrender.com/api/task/t/${id}`)
 
         if (response.data.success) {
             setTaskComplete((prev) => !prev)

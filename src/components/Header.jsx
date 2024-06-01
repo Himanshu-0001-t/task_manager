@@ -10,7 +10,7 @@ function Header() {
   const [username, setUsername] = useState(null)
 
   const handleLogout = async () => {
-    const response = await axios.post('api/user/logout')
+    const response = await axios.post('https://task-manager-api-brl4.onrender.com/api/user/logout')
 
     if (response.data.success) {
       localStorage.clear("task_login")

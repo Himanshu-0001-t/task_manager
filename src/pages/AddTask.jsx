@@ -23,7 +23,7 @@ function AddTask() {
     const createTask = async (e) => {
         e.preventDefault()
 
-        const respponse = await axios.post('api/task', task)
+        const respponse = await axios.post('https://task-manager-api-brl4.onrender.com/api/task', task)
 
         if (respponse.data.success) {
             setTask({

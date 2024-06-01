@@ -25,7 +25,7 @@ function UpdateTask() {
     }
 
     const handUpdate = async () => {
-        const response = await axios.post(`api/task/u/${id}`, task)
+        const response = await axios.post(`https://task-manager-api-brl4.onrender.com/api/task/u/${id}`, task)
 
         if (response.data.success) {
             toast.success(response.data.message)
